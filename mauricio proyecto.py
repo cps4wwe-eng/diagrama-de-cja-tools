@@ -16,7 +16,7 @@ for x in datos.split(","):
 print("Datos válidos:", datos_procesados)
 
 if errores:
-    print("Value Error:datos no cuantificables:", errores) 
+    print("Value Error:dato/s no cuantificable/s:", errores) 
     exit()
 
 
@@ -118,7 +118,13 @@ y= np.array([3,2,2.5,2.5, #bigote inferior
 puntosy= np.array([2.8 * np.random.rand() + 1 for i in range(len(Valores_atipicos))])
 puntosx= np.array([valor for valor in Valores_atipicos])
 color= "red"
+
+Q2y= np.array([1,4])
+Q2x= np.array([Q2,Q2])
+
 pyplot.title("Diagrama de caja cls de mtmtcs")
 pyplot.scatter(puntosx,puntosy,c=color, cmap="seismic")
+pyplot.plot(Q2x,Q2y ,c="red", linestyle="--")
 pyplot.plot(x,y)
 pyplot.show()
+print(Q2)
