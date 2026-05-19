@@ -136,7 +136,7 @@ Bigote_superior_y= np.array([2.5, 2.5,3,2])
 pyplot.title("Diagrama de caja cls de mtmtcs")  # Setting the title of the plot
 pyplot.scatter(puntosx,puntosy,c=color, cmap="seismic", label="Valores atipicos" + str(Valores_atipicos))  # Plotting outliers
 pyplot.plot(Q2x,Q2y ,c="red", linestyle="--", label="Q2: " + str(Q2))  # Plotting the median line
-pyplot.plot(x,y, label="Q1: " + str(Q1) + ", Q3: " + str(Q3) "(vertical)" )  # Plotting the box and whiskers
+pyplot.plot(x,y, label="Q1: " + str(Q1) + ", Q3: " + str(Q3) "  (vertical)" )  # Plotting the box and whiskers
 pyplot.plot(Bigote_inferior_x, Bigote_inferior_y, c="green", linestyle="-", label="Limite inferior: " + str(limite_inferior))  # Plotting the lower whisker
 pyplot.plot(Bigote_superior_x, Bigote_superior_y, c="green", linestyle="-", label="Limite superior: " + str(Limite_superior))  # Plotting the upper whisker
 pyplot.plot(RICLINEX, RICLINEY, c="black", linestyle="-.", label="RIC: " + str(RIC))  # Plotting the IQR line
